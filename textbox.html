@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function button()
+            {
+                var username=document.getElementById("username").value;
+               // alert("value inside the textbox is:"+str+"");
+
+                var password=document.getElementById("password").value;
+                //alert("value is checked");
+
+                if(username=="murali" && password=="murali123")
+                {
+                    alert("username and password  matches");
+                }
+                else
+                {
+                    alert("username and password  doesn't match");
+                }
+            }
+             
+
+        </script>
+    </head>
+    <body>
+        <input id="username" placeholder="username">
+        <br>
+        <br>
+        <input type="text" id="password" placeholder="password">
+        <br>
+        <br>
+        <button onclick="button()" id="btn">click me</button>
+
+    </body>
+</html>
