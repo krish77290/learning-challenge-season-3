@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>forms validations</title>
+        <script type="text/javascript">
+        function validation()
+        {
+            var Username=document.getElementById("name");
+            var password=document.getElementById("pass");
+
+            if(Username.value.trim()=="")
+            {
+                //alert("blank username");
+                Username.style.border="solid 3px red";
+                document.getElementById("lab1").style.visibility="visible";
+                return false;
+
+            }
+            else if(password.value.trim()=="")
+            {
+                //alert(" Blank password");
+                password.style.border="solid 3px red";
+                document.getElementById("lab2").style.visibility="visible";
+                return false;
+
+            }
+            else if(password.value.trim().lenght<5)
+            {
+                alert(" password lenght should be greater then 5 characters");
+                return false;
+            }
+            else{
+                return true;
+
+            }
+            // here through html5 we can validate by using simple attribute= "requried"
+            // its a basic and but not advance as javascript 
+        }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit=" return validation();" action="changingimage.html">
+            <input id="name" placeholder="Username" type="text"/>
+            <label id="lab1" style="color: red; visibility: hidden;" >invalid</label>
+            <br>
+            <br>
+            <input id="pass" placeholder="password" type="password"/>
+            <label id="lab2" style="color: red; visibility: hidden;" >invalid</label>
+            <br>
+            <br>
+            <button id="button" type="submit">submit</button>
+            
+        </form>
+
+    </body>
+</html>
