@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>select box</title>
+        <script type="text/javascript">
+            //Dom manipulation & getelementid merhod
+            /*
+            in this program we are taking a input from selection box 
+            means a dropdown box
+            in html we want to create dropdown box use select tags
+            in select we need to add the optins so we use options tag
+            */
+            function sample()
+            {
+                var select=document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value);
+            }
+
+
+            
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+            <option value="AP">Andhra Pradesh</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="TN">Tamil Nadu</option>
+        </select>
+        <br>
+        <button onclick="sample()">click me</button>
+    </body>
+
+</html>
