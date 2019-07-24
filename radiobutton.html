@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+
+            // dom manipulation & get elementid method with radiobutton
+            // if same id then we select either one option of all radio options
+            function bill()
+            {
+                 var rd1=document.getElementById("rd1");
+                 var rd2=document.getElementById("rd2");
+
+                 if(rd1.checked==true)
+                 {
+                     alert("the selected one is:"+rd1.value+"");
+                 }
+                 else if(rd2.checked==true){
+                    alert("the selected one is:"+rd2.value+"");
+                 }
+                 else{
+                     alert("no one is selected:")
+                 }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h3>murali krishna is a what kind of boy ?</h3>
+        <br>
+        <input id="rd1" name="group1" type="radio" value="good">good</input>
+        <br>
+        <input id="rd2" name="group1" type="radio" value="bad">bad</input>
+        <br>
+        <button onclick="bill()" id="button" >click me</button>
+    </body>
+</html>
