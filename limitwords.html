@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+
+                function maxlength(element, maxvalue)
+                {
+                    var q = eval("document.upload."+element+".value.length");
+                    var r = q - maxvalue;
+                    var msg = "Sorry, you have input "+q+" characters into the "+
+                    "text area box you just completed. It can return no more than "+
+                    maxvalue+" words to be processed. Please abbreviate "+
+                    "your text by at least "+r+" words";
+                    if (q > maxvalue) alert(msg);
+                    console.log(q);
+                }
+        </script>
+    </head>
+    <body>
+            <tr>
+                    <td><label>Abstract Details</label> </td>
+                  <td><label>Please enter data, at most 250 words:</label>
+                   <br/>
+                   <textarea rows="6" cols="80"name="box_name"  onChange="maxlength('box_name', 250)" style="width: 257px; height: 131px;">    </textarea></td>
+            </tr>
+             <button type="submit">submit</button>
+    </body>
+</html>
