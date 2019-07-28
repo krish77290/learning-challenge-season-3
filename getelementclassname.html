@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>get element by class name method</title>
+        <script type="text/javascript">
+            function fun1()
+            {
+                var para=document.getElementsByClassName("myclass");
+                for(i=0;i<para.length;i++)
+                {
+                    para[i].style.color="red";
+
+                }
+                
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p class="myclass">my life is full fail
+        </p>
+        <p>DONT THINK about her </p>
+        <p class="myclass">think about ur life </p>
+        <p>be serious in life and do what ever u want u reach ur goal</p>
+        <p class="myclass">my first goal is i have to be placed in campus placement in my clg with highest package in the campus </p>
+        <br>
+        <button onclick="fun1()">click me</button>
+        
+    </body>
+</html>
