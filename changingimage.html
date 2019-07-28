@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>changing image</title>
+        <script tpye="text/javascript">
+            //dom maniplucation &
+            //onmouseover and onmouseout events by using img changing
+
+            function fun1()
+            {
+                document.getElementById("img1").src="flower.jpg";
+            }
+            function fun2()
+            {
+                document.getElementById("img1").src="beauty.jpg";
+            }     
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="fun1()" onmouseout="fun2()" src="beauty.jpg" width="400" height="400"/>
+
+
+    </body>
+</html>
