@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            uploading file
+        </title>
+        <script type="text/javascript">
+
+            function sample()
+            {
+                var file=document.createElement("input");
+                file.setAttribute("type","file");
+                document.body.appendChild(file);
+                alert("please upload the file");
+            }
+        </script>
+    </head>
+    <body>
+        <P>when we click submit automatically we can upload a file</P>
+        <br>
+        <button type="submit" onclick="sample()">submit</button>
+    </body>
+</html>
